@@ -1,0 +1,42 @@
+{
+  "name": "restful-api-sleran",
+  "version": "0.3.2",
+  "description": "Et restful api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r dotenv/config server.js dotenv_config_path=./.env",
+    "dev": "run-script-os",
+    "dev:win32": "set DEBUG=kodebase & nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "dev:linux": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleran/restful-api-sleran.git"
+  },
+  "keywords": [
+    "API",
+    "Oste"
+  ],
+  "author": "Steffen Larsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sleran/restful-api-sleran/issues"
+  },
+  "homepage": "https://github.com/sleran/restful-api-sleran#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "debug": "^4.1.0",
+    "nodemon": "^1.18.6",
+    "run-script-os": "^1.0.3"
+  }
+}
